@@ -145,15 +145,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 👤 Autor
 
-**Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-
-## 🙏 Agradecimientos
-
-- [Rembg](https://github.com/danielgatis/rembg) - Por la excelente librería de eliminación de fondos
-- [FastAPI](https://fastapi.tiangolo.com/) - Por el increíble framework web
-- [Tailwind CSS](https://tailwindcss.com/) - Por las utilidades CSS
+**NotExer**
+- GitHub: [@NotExer](https://github.com/NotExer)
+- LinkedIn: [Samuel Gomez](https://linkedin.com/in/samuel-gomez-restrepo-717238191/)
 
 ---
 
