@@ -52,8 +52,8 @@ RemooVI es una herramienta web que permite eliminar el fondo de imágenes de man
 
 1. **Clona el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/remoovi.git
-cd remoovi
+git clone https://github.com/NotExer/Remoover.git
+cd Remoover
 ```
 
 2. **Crea un entorno virtual (recomendado)**
