@@ -12,5 +12,5 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"message": "Remoover API is running (Background removal moved to client-side)"}
+    return {"message": "RemooVI API is running (Background removal moved to client-side)"}
 
