@@ -206,9 +206,8 @@
       formData.append("file", file);
 
       try {
-        // Use environment variable for API URL or default to local proxy/backend
-        const API_URL =
-          import.meta.env.PUBLIC_BACKEND_URL || "http://localhost:8000";
+        // Use environment variable for API URL or default to relative path for Vercel
+        const API_URL = import.meta.env.PUBLIC_BACKEND_URL || "/api";
         // Remove trailing slash if present to avoid double slashes
         const cleanApiUrl = API_URL.replace(/\/$/, "");
 

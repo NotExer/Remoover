@@ -6,7 +6,7 @@ os.environ['U2NET_HOME'] = '/tmp/.u2net'
 
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import StreamingResponse
-from rembg import remove
+from rembg import remove, new_session
 from io import BytesIO
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -28,7 +28,11 @@ def read_root():
 @app.post("/remove-bg")
 async def remove_background(file: UploadFile = File(...)):
     image_data = await file.read()
-    result = remove(image_data)
+    # Use 'u2netp' model which is much smaller and acceptable for general use
+    # This prevents Vercel function timeouts
+    model_name = "u2netp"
+    session = new_session(model_name)
+    result = remove(image_data, session=session)
     return StreamingResponse(BytesIO(result), media_type="image/png")
 
 # For local testing
