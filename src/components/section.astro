@@ -228,8 +228,9 @@
         // Error
         loader.classList.add("hidden");
         loader.classList.remove("flex");
-        fileNameDisplay.textContent = "Hubo un error al procesar la imagen.";
-        fileNameDisplay.className = "text-red-500 mt-4 font-bold";
+        fileNameDisplay.textContent = `Error: ${error.message || error}`;
+        fileNameDisplay.className =
+          "text-red-500 mt-4 font-bold break-words text-sm";
         mainContent.classList.remove("hidden"); // Show main content again
         console.error(error);
       }
