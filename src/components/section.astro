@@ -206,7 +206,13 @@
       formData.append("file", file);
 
       try {
-        const response = await fetch("/api/remove-bg", {
+        // Use environment variable for API URL or default to local proxy/backend
+        const API_URL =
+          import.meta.env.PUBLIC_BACKEND_URL || "http://localhost:8000";
+        // Remove trailing slash if present to avoid double slashes
+        const cleanApiUrl = API_URL.replace(/\/$/, "");
+
+        const response = await fetch(`${cleanApiUrl}/remove-bg`, {
           method: "POST",
           body: formData,
         });
