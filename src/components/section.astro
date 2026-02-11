@@ -179,7 +179,9 @@
   </div>
 </section>
 
-<script type="module">
+<script>
+  import { removeBackground } from "@imgly/background-removal";
+
   const fileInput = document.getElementById("fileInput");
   const fileNameDisplay = document.getElementById("fileName");
   const mainContent = document.getElementById("mainContent");
@@ -206,8 +208,7 @@
       formData.append("file", file);
 
       try {
-        // Dynamic import to avoid SSR issues
-        const { removeBackground } = await import("@imgly/background-removal");
+        // Process directly in browser using the imported function
 
         // Process directly in browser
         const blob = await removeBackground(file, {
