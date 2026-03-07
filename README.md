@@ -14,27 +14,27 @@ Una aplicación web moderna para eliminar fondos de imágenes utilizando intelig
 </div>
 
 ---
-## 📺 Preview
+## Preview
 
-**🌐 Visita el sitio:** > [https://remoovi.vercel.app](https://remoovi.vercel.app)
+**Visita el sitio:** > [https://remoovi.vercel.app](https://remoovi.vercel.app)
 
 
 
-## 📋 Descripción
+## Descripción
 
 RemooVI es una herramienta web que permite eliminar el fondo de imágenes de manera automática y precisa utilizando IA. Con una interfaz moderna y elegante, los usuarios pueden procesar sus imágenes en segundos de forma completamente gratuita.
 
-## ✨ Características
+## Características
 
-- 🎯 **Precisión profesional**: Utiliza algoritmos de IA avanzados para detección precisa de objetos
-- ⚡ **Procesamiento rápido**: Elimina fondos en segundos
-- 🎨 **Interfaz moderna**: Diseño glassmorphism con gradientes y animaciones suaves
-- 📱 **Totalmente responsive**: Funciona perfectamente en dispositivos móviles y desktop
-- 🖱️ **Drag & Drop**: Arrastra y suelta imágenes para procesarlas al instante
-- 💾 **Descarga HD**: Obtén tus imágenes procesadas en alta calidad
-- 🆓 **Completamente gratis**: Sin límites ni marcas de agua
+-  **Precisión profesional**: Utiliza algoritmos de IA avanzados para detección precisa de objetos
+-  **Procesamiento rápido**: Elimina fondos en segundos
+-  **Interfaz moderna**: Diseño glassmorphism con gradientes y animaciones suaves
+-  **Totalmente responsive**: Funciona perfectamente en dispositivos móviles y desktop
+-  **Drag & Drop**: Arrastra y suelta imágenes para procesarlas al instante
+-  **Descarga HD**: Obtén tus imágenes procesadas en alta calidad
+-  **Completamente gratis**: Sin límites ni marcas de agua
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Backend
 - **FastAPI**: Framework web moderno y rápido para Python
@@ -46,7 +46,7 @@ RemooVI es una herramienta web que permite eliminar el fondo de imágenes de man
 - **Tailwind CSS**: Framework de utilidades CSS
 - **Vanilla JavaScript**: Lógica del cliente sin dependencias
 
-## 📦 Instalación
+## Instalación
 
 ### Prerrequisitos
 
@@ -77,7 +77,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🚀 Uso
+## Uso
 
 1. **Inicia el servidor backend**
 ```bash
@@ -109,26 +109,10 @@ Elimina el fondo de una imagen.
 - Body: Imagen procesada sin fondo
 
 
-## 🎨 Características de Diseño
+## Características de Diseño
 
 - **Glassmorphism**: Efectos de vidrio translúcido
 - **Gradientes animados**: Fondos con efectos de blur dinámicos
 - **Animaciones suaves**: Transiciones fluidas en todas las interacciones
 - **Feedback visual**: Indicadores de carga y estados de procesamiento
 - **Vista previa con patrón de transparencia**: Visualización profesional de imágenes PNG
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 👤 Autor
-
-**NotExer**
-- GitHub: [@NotExer](https://github.com/NotExer)
-- LinkedIn: [Samuel Gomez](https://www.linkedin.com/in/notexer/)
