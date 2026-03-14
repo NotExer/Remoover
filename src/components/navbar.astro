@@ -3,62 +3,57 @@ import icon from "../assets/ConverterIcon.png";
 ---
 
 <nav
-  class="fixed top-0 z-50 w-full border-b border-white/10 bg-black/50 backdrop-blur-xl"
+  class="fixed top-0 z-50 w-full border-b border-black/10 bg-white/80 backdrop-blur-xl"
 >
   <div class="flex items-center justify-between mx-auto px-6 py-4 max-w-6xl">
-    <!-- Logo -->
     <a href="/" class="flex items-center space-x-3 group">
-      <div class="relative">
-        <div
-          class="absolute inset-0 bg-purple-500 blur opacity-40 group-hover:opacity-60 transition duration-300 rounded-full"
-        >
-        </div>
-        <img
-          src={icon.src}
-          alt="RemooV Icon"
-          class="h-10 w-10 relative z-10 spin"
-        />
-      </div>
-      <span
-        class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
-        >RemooVI</span
-      >
+      <img
+        src={icon.src}
+        alt="RemooVI"
+        class="h-8 w-8 transition-transform duration-300 group-hover:scale-105"
+      />
+      <span class="text-xl font-semibold text-[#1d1d1f] tracking-tight">
+        RemooVI
+      </span>
     </a>
 
     <ul class="hidden md:flex space-x-8">
       <li>
         <a
           href="#hero"
-          class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-          >Inicio</a
+          class="text-sm font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
         >
+          Inicio
+        </a>
       </li>
       <li>
         <a
           href="#how-it-works"
-          class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-          >Cómo funciona</a
+          class="text-sm font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
         >
+          Como funciona
+        </a>
       </li>
       <li>
         <a
           href="#features"
-          class="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-          >Características</a
+          class="text-sm font-medium text-[#6e6e73] hover:text-[#1d1d1f] transition-colors"
         >
+          Caracteristicas
+        </a>
       </li>
     </ul>
 
     <div class="md:hidden">
       <button
         id="burger"
-        class="flex flex-col justify-between w-6 h-4 text-white focus:outline-none"
+        class="flex flex-col justify-between w-6 h-4 focus:outline-none"
       >
         <span
-          class="burger-line top-line block h-[2px] bg-white w-full rounded transition-all duration-300 ease-in-out"
+          class="burger-line top-line block h-[2px] bg-[#1d1d1f] w-full rounded transition-all duration-300 ease-in-out"
         ></span>
         <span
-          class="burger-line bottom-line block h-[2px] bg-white w-full rounded transition-all duration-300 ease-in-out"
+          class="burger-line bottom-line block h-[2px] bg-[#1d1d1f] w-full rounded transition-all duration-300 ease-in-out"
         ></span>
       </button>
     </div>
@@ -66,28 +61,31 @@ import icon from "../assets/ConverterIcon.png";
 </nav>
 <ul
   id="mobileMenu"
-  class="fixed z-40 top-[73px] left-0 w-full bg-black/95 backdrop-blur-xl border-b border-gray-800 text-white transition-all duration-300 ease-in-out md:hidden overflow-hidden max-h-0"
+  class="fixed z-40 top-[65px] left-0 w-full bg-white/95 backdrop-blur-xl border-b border-black/10 transition-all duration-300 ease-in-out md:hidden overflow-hidden max-h-0"
 >
-  <li class="py-4 border-b border-purple-800 bg-purple-950">
+  <li class="py-4 border-b border-[#d2d2d7]">
     <a
       href="#hero"
-      class="block text-center text-lg font-medium hover:text-purple-950"
-      >Inicio</a
+      class="block text-center text-base font-medium text-[#1d1d1f] hover:text-[#0071e3] transition-colors"
     >
+      Inicio
+    </a>
   </li>
-  <li class="py-4 border-b border-purple-800 bg-purple-950">
+  <li class="py-4 border-b border-[#d2d2d7]">
     <a
       href="#how-it-works"
-      class="block text-center text-lg font-medium hover:text-purple-950"
-      >Cómo funciona</a
+      class="block text-center text-base font-medium text-[#1d1d1f] hover:text-[#0071e3] transition-colors"
     >
+      Como funciona
+    </a>
   </li>
-  <li class="py-4 border-b border-purple-800 bg-purple-950">
+  <li class="py-4">
     <a
       href="#features"
-      class="block text-center text-lg font-medium hover:text-purple-950"
-      >Características</a
+      class="block text-center text-base font-medium text-[#1d1d1f] hover:text-[#0071e3] transition-colors"
     >
+      Caracteristicas
+    </a>
   </li>
 </ul>
 
@@ -97,11 +95,9 @@ import icon from "../assets/ConverterIcon.png";
     const topLine = document.querySelector(".top-line");
     const bottomLine = document.querySelector(".bottom-line");
 
-    // Mostrar u ocultar el menú
     menu.classList.toggle("max-h-0");
     menu.classList.toggle("max-h-96");
 
-    // Animación burger a "X"
     topLine.classList.toggle("rotate-45");
     topLine.classList.toggle("translate-y-[7px]");
 
@@ -109,18 +105,3 @@ import icon from "../assets/ConverterIcon.png";
     bottomLine.classList.toggle("-translate-y-[7px]");
   });
 </script>
-
-<style>
-  .spin {
-    animation: spin 2s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-</style>
